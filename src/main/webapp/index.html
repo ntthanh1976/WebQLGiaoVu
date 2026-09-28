@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Lọc sinh viên</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        select, button {
+            padding: 8px 12px;
+            margin-left: 5px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th, td {
+            border: 1px solid #999;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eee;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>LỌC SINH VIÊN THEO ĐIỂM</h2>
+
+    <!-- Form chọn điểm tối thiểu -->
+    <form action="students" method="get">
+
+        <label>Điểm tối thiểu:</label>
+
+        <select name="minScore">
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+
+        <button type="submit">Lọc</button>
+
+    </form>
+
+
+    <!-- Bảng kết quả -->
+    <h3>Kết quả</h3>
+
+    <table>
+        <tr>
+            <th>Mã sinh viên</th>
+            <th>Họ tên</th>
+            <th>Điểm</th>
+        </tr>
+
+        <tr>
+            <td>SV01</td>
+            <td>Nguyễn Văn An</td>
+            <td>8.5</td>
+        </tr>
+
+        <tr>
+            <td>SV02</td>
+            <td>Trần Văn Bình</td>
+            <td>7.0</td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
